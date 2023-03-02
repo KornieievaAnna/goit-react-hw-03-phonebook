@@ -29,10 +29,10 @@ class Form extends Component {
   //   console.log(event.currentTarget.value);
   //   this.setState({ number: event.currentTarget.value });
   // };
-  
+
   render() {
     return (
-      <ImputForm onSubmit={this.handleSubmit}  >
+      <ImputForm onSubmit={this.handleSubmit}>
         <Label>
           Name
           <input
@@ -64,7 +64,7 @@ class Form extends Component {
 }
 
 Form.propTypes = {
-  addContact: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default Form;
